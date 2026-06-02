@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Gallery</title>
+<style type="text/css">
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial,sans-serif;}
+body{line-height:1.6;}
+
+.header{display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#3b0976;
+color:white;}
+
+.hero{text-align:center;
+padding:80px 20px;
+background:linear-gradient(to right,#3b0976,#7a66b6);
+color:white;}
+
+.services{padding:60px 20px;
+text-align:center;}
+
+.service-container{display: list-item;
+grid-template-columns: repeat(auto-fit,minimax(250px,1fr));
+gap:100px;
+padding-bottom: 10px;
+margin-top:30px;}
+
+.card{background:#f1f5f9;
+padding: 4opx;
+padding-bottom: 70px;
+border-radius:8px;
+transition:0.3s ;}
+
+.card:hover{transform: translateY(-10px);}
+
+.footer{background:#0d0d0e;
+color:white;
+text-align:center;
+padding:20px;}
+
+ul{list-style-type:none; margin:0;
+          padding-right:10px; padding-left:890px;
+          background-color: #7a66b6;}
+          ul li{float:left;}
+          ul li a{display:block;color: white;
+          text-align: center;padding:12px 10px;
+          text-decoration:none;}
+      ul li a:hover{background-color: #85878a;}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+</ul>
+</header>
+
+<section class="hero">
+<h1>Gallery</h1>
+</section>
+
+<section class="services">
+<h2>Our Work</h2>
+<div class="service-container">
+<div class="card">cyber security</div>
+<div class="card">web design </div>
+<div class="card">full stack </div>
+<div class="card">data analysis</div>
+</div>
+</section>
+
+<footer class="footer">
+<p>&copy; CCGS 2026 | All Right Reserved&reg;</p>
+</footer>
+
+</body>
+</html>

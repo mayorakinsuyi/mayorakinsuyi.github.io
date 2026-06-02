@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <title>Responsive</title>
+    <style type="text/css">
+      *{margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial,sans-serif;}
+      body{line-height: 1.6;}
+
+      .header{display:flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:15px 40px;
+      background: #3b0976;
+      color: white;}
+
+      .nav a{color: white;
+      margin-left: 20px;
+      text-decoration: none;}
+
+      .hero{text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #3b0976, #7a66b6);
+      color: white;}
+
+      .hero button{border:none;
+      padding: 12px 25px;
+      margin-top:15px;
+      background: white;
+      color: #2563eb;
+      cursor:pointer;}
+
+      .services{padding:60px 20px;
+      text-align:center;
+      }
+
+      .service-container{display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;}
+
+      .card{background:#f1f5f9;
+      padding:40px;
+      border-radius: 8px;
+      transition: 0.3s;}
+
+      .card:hover{transform: translateY(-5px);}
+
+      .about{background: #e2e8f0;
+      padding:20px;
+      text-align: center;}
+
+      .footer{background: #3b0976;
+      color: white;
+      text-align: center;
+      padding: 20px;}
+
+      @media(max-width:768px){
+          .header{flex-direction: column;
+          }
+          .nav{margin-top: 10px;
+          }
+      }
+
+      ul{list-style-type:none; margin:0;
+          padding-right:10px; padding-left:890px;
+          background-color: #09090a;}
+          ul li{float:left;}
+          ul li a{display:block;color: white;
+          text-align: center;padding:12px 10px;
+          text-decoration:none;}
+      ul li a:hover{background-color: #85878a;}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Modern Responsive Website</h1>
+        <button>Explore Our Community</button>
+    </section>
+
+    <section class="services">
+        <h2>Courses</h2>
+        <div class="service-container">
+            <div class="card">Graphic Design </div>
+            <div class="card">Web Design</div>
+            <div class="card">Data Processing </div>
+            <div class="card">Software Development </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>This design was done as a responsive page to see how mobile friendly it is.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; CCGS 2026 | All Right Reserved&reg;</p>
+    </footer>
+  </body>
+</html>
